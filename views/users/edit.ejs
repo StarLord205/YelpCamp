@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+
+<div class = "row">
+    <h1 style = "text-align: center;">Edit Profile</h1>
+    <div style = "width: 30%; margin: 25px auto;">
+        <form action = "/users/<%= user._id %>/?_method=PUT" method = "POST">
+            <label>Username</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "text" name = "username" value = "<%= user.username %>">
+            </div>
+            <label>Password</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "password" name = "password"value = "<%= user.password %>">
+            </div>
+            <label>First Name</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "text" name = "firstName" value = "<%= user.firstName %>">
+            </div>
+            <label>Last Name</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "text" name = "lastName" value = "<%= user.lastName %>">
+            </div>
+            <label>Email</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "email" name = "email" value = "<%= user.email %>" disabled>
+            </div>
+            <label>Avatar URL</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "text" name = "avatar" value = "<%= user.avatar %>">
+            </div>
+            <label>Admin Code</label>
+            <div class = "form-group">
+                <input class = "form-control" type = "password" name = "adminCode" value = "<%= user.adminCode %>">
+            </div>
+            <div class = "form-group">
+                <button class = "btn btn-lg btn-default btn-primary btn-block">Edit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<% include ../partials/footer %>
