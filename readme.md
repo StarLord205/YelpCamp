@@ -6,6 +6,11 @@
 Each Campgrounds has:
 * Name
 * Image
+* Description
+* Price
+* Post create date
+* Author
+* Comments
 
 
 # Layout and Basic Styling
