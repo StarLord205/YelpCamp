@@ -157,23 +157,3 @@ Each Campgrounds has:
 * Demo working version
 * Install and configure connect-flash
 * Add bootstrap alerts to header
-
-
-
-RESTful Routes
-
-name        url         verb    description
-==================================================
-INDEX       /dogs       GET     Display a list of all dogs
-NEW         /dogs/new   GET     Displays form to make a new dog
-CREATE      /dogs       POST    Add new dog to DB
-SHOW        /dogs/:id   GET     Shows info about one dog
-
-
-INDEX   /campgrounds
-NEW     /campgrounds/new
-CREATE  /campgrounds
-SHOW    /campgrounds/:id
-
-NEW     /campgrounds/:id/comments/new   GET
-CREATE  /campgrounds/:id/comments       POST
